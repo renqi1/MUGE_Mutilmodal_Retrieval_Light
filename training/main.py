@@ -129,7 +129,7 @@ def main(args):
     for epoch in range(start_epoch, args.epochs):
         train(model, data, epoch, optimizer, scaler, scheduler, args)
         if args.val and args.val_data is not None:
-            # evaluate未修改，可能跑不了，要验证就自己再改改
+            # evaluate未修改，可能跑不了，验证会很费时，要验证就自己再改改
             evaluate(model, data, epoch + 1)
         # Saving checkpoints.
         if (epoch + 1) == args.epochs or ((epoch + 1) % args.save_frequency == 0):
