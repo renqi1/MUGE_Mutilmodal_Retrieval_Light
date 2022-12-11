@@ -4,9 +4,11 @@
 
 
 根据比赛提供的[image-retrieval-baseline](https://github.com/MUGE-2021/image-retrieval-baseline)修改，
-baseline的缩减版本，删掉了很多功能，代码简洁易读。 代码魔改后只支持单卡GPU训练。
+baseline的缩减版本，删掉了很多功能，代码简洁易读。与官方最大的不同是我是以原图png格式进行训练和预测。代码魔改后只支持单卡GPU训练。
+
 想跑高分可以看这个库：[Chinese CLIP](https://github.com/OFA-Sys/Chinese-CLIP),
-但是我复现不出来他的结果，可能是我代码的问题吧，毕竟很多人都复现出来了。
+但是我复现不出来他的结果，我很郁闷我的零样本学习结果mean recall只有1%咋回事，于是我就重新跑结果也只有67%，可能是我代码的问题吧，毕竟很多人都复现出来了。
+
 
 ### 代码说明
 ```
