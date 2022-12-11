@@ -89,7 +89,7 @@ def train(model, data, epoch, optimizer, scaler, scheduler, args):
 
 
 def evaluate(model, data, epoch):
-    # 还没改好，可能跑不了，自己改吧
+    # 验证应该很费时，就没验证，还没改好，可能跑不了，自己改吧
     logging.info(f"Begin to eval epoch: {epoch}...")
     
     model.eval()
